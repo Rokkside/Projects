@@ -1,0 +1,11 @@
+<form action='/todo' method='post'>
+	<% ['html', 'css', 'sinatra'].each do |item| %>
+		<h1>got <%= item %></h1>
+		<label>
+			learn <%= item %>
+			<input checked type='checkbox' name='learn <%= item %>' />
+		</label>
+		<br />
+	<% end %>
+	<input type='submit' />
+</form>
